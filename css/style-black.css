@@ -1,0 +1,18 @@
+.wraper,.click,.our-work{
+    background-color: #696969;
+}
+.our-services h3,.amazing-blog h4,.service-description p,.our-work h3,.our-work-buttons li,.breaking-news h3,.best-image h3,.comments span,.click{
+    color:#ffff;
+}
+.click li,.our-work-buttons li{
+    border: 1px solid #808080;
+}
+.services ul:last-child,.our-work-buttons li:last-child,.our-work-buttons li{
+    border-right: 1px solid #808080;
+}
+.btn[data-theme = "dark"]{
+    display:block;
+}
+.btn[data-theme = "light"]{
+    display: none;
+}

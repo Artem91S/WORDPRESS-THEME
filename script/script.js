@@ -1,3 +1,32 @@
+/////css
+const input = document.getElementById("input");
+console.log(input);
+
+input.addEventListener("click", color);
+let count=1;
+function color(e){
+let click = e.target.dataset.input;
+if(click ==="1"){
+    ++count;
+}
+function takeTheme(themeName){
+    let themeUrl =`css/style-${themeName}.css`
+    document.querySelector('[title="theme"]').setAttribute('href',themeUrl)
+}
+if(count % 2 === 0){
+    takeTheme("black")
+}
+else{
+    takeTheme("light")
+}
+// let activeTheme = localStorage.getItem("theme");
+// if(activeTheme === null){
+//     takeTheme("light")
+// }
+// else{
+//     takeTheme(activeTheme)
+// }
+}
 // ////block Our Services
 // масив кнопок
 const nameOfButtons =Array.from(document.querySelector(".click").children);
