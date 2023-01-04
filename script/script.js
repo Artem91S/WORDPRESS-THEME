@@ -19,20 +19,10 @@ if(count % 2 === 0){
 else{
     takeTheme("light")
 }
-// let activeTheme = localStorage.getItem("theme");
-// if(activeTheme === null){
-//     takeTheme("light")
-// }
-// else{
-//     takeTheme(activeTheme)
-// }
 }
 // ////block Our Services
-// масив кнопок
 const nameOfButtons =Array.from(document.querySelector(".click").children);
-////масив inform 
 const buttonDiscription = Array.from(document.querySelector(".information").children);
-/////фуnкция поиска названия клик
 const clickAction = function(event){
     const nameOfClick = event.currentTarget.dataset.name;
     buttonDiscription.forEach(element => {
@@ -51,180 +41,153 @@ const clickAction = function(event){
 nameOfButtons.forEach(button => {
     button.addEventListener("click", clickAction)
 });
-///////////////делегирование 
-// let selectButton;
-// const buttonDiscription = Array.from(document.querySelector(".information").children);
-// let btnClick = document.querySelector(".click");
-// btnClick.addEventListener("click", e=>{
-// let targetClick =e.target;
-// let nameOfBtnClick =e.target.dataset.name;
-// buttonDiscription.forEach(discription =>{
-//     if(discription.getAttribute('show-info') === nameOfBtnClick ){
-//         discription.classList.add("click-on-button");
-//     }
-//     else{
-//         discription.classList.remove("click-on-button");
-//     }
-// })
-// activeColor(targetClick);
-// })
-// function activeColor(clickname) {
-//     if(selectButton){
-//         selectButton.classList.remove("clikc-button-color")  
-//     }
-
-//     selectButton = clickname;
-//     selectButton.classList.add("clikc-button-color")  
-
-// }
-
 ///////Our Amazing Work
 const block =document.querySelector('.photo-of-works')
 const buttonLoadImg = document.querySelector(".load-img");
 const namesOurWorkButtons = Array.from(document.querySelector('.our-work-buttons').children);
 
 const arr =[
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design1.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design1.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/landingPage/landing-page1.jpg",
+    {url:"./image/StepProjectHam/landingPage/landing-page1.jpg",
     cattegory:"landing-page",
     "showphoto":"landing-page",
     name:"LandingPage"},
-    {url:"/image/StepProjectHam/webDesign/web-design1.jpg",
+    {url:"./image/StepProjectHam/webDesign/web-design1.jpg",
     cattegory:"web-design",
     "showphoto":"web-design",
     name:"Webdesign"},
-    {url:"/image/StepProjectHam/wordPress/wordpress1.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress1.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design2.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design2.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/landingPage/landing-page2.jpg",
+    {url:"./image/StepProjectHam/landingPage/landing-page2.jpg",
     cattegory:"landing-page",
     "showphoto":"landing-page",
     name:"LandingPage"},
-    {url:"/image/StepProjectHam/webDesign/web-design2.jpg",
+    {url:"./image/StepProjectHam/webDesign/web-design2.jpg",
     cattegory:"web-design",
     "showphoto":"web-design",
     name:"Webdesign"},
-    {url:"/image/StepProjectHam/wordPress/wordpress2.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress2.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design3.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design3.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design4.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design4.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/landingPage/landing-page3.jpg",
+    {url:"./image/StepProjectHam/landingPage/landing-page3.jpg",
     cattegory:"landing-page",
     "showphoto":"landing-page",
     name:"LandingPage"},
-    {url:"/image/StepProjectHam/landingPage/landing-page4.jpg",
+    {url:"./image/StepProjectHam/landingPage/landing-page4.jpg",
     cattegory:"landing-page",
     "showphoto":"landing-page",
     name:"LandingPage"},
-    {url:"/image/StepProjectHam/landingPage/landing-page5.jpg",
+    {url:"./image/StepProjectHam/landingPage/landing-page5.jpg",
     cattegory:"landing-page",
     "showphoto":"landing-page",
     name:"LandingPage"},
-    {url:"/image/StepProjectHam/webDesign/web-design3.jpg",
+    {url:"./image/StepProjectHam/webDesign/web-design3.jpg",
     cattegory:"web-design",
     "showphoto":"web-design",
     name:"Webdesign"},
-    {url:"/image/StepProjectHam/webDesign/web-design4.jpg",
+    {url:"./image/StepProjectHam/webDesign/web-design4.jpg",
     cattegory:"web-design",
     "showphoto":"web-design",
     name:"Webdesign"},
-    {url:"/image/StepProjectHam/wordPress/wordpress3.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress3.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/wordPress/wordpress4.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress4.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design5.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design5.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design6.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design6.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design7.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design7.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/landingPage/landing-page6.jpg",
+    {url:"./image/StepProjectHam/landingPage/landing-page6.jpg",
     cattegory:"landing-page",
     "showphoto":"landing-page",
     name:"LandingPage"},
-    {url:"/image/StepProjectHam/landingPage/landing-page7.jpg",
+    {url:"./image/StepProjectHam/landingPage/landing-page7.jpg",
     cattegory:"landing-page",
     "showphoto":"landing-page",
     name:"LandingPage"},
-    {url:"/image/StepProjectHam/webDesign/web-design5.jpg",
+    {url:"./image/StepProjectHam/webDesign/web-design5.jpg",
     cattegory:"web-design",
     "showphoto":"web-design",
     name:"Webdesign"},
-    {url:"/image/StepProjectHam/webDesign/web-design6.jpg",
+    {url:"./image/StepProjectHam/webDesign/web-design6.jpg",
     cattegory:"web-design",
     "showphoto":"web-design",
     name:"Webdesign"},
-    {url:"/image/StepProjectHam/webDesign/web-design7.jpg",
+    {url:"./image/StepProjectHam/webDesign/web-design7.jpg",
     cattegory:"web-design",
     "showphoto":"web-design",
     name:"Webdesign"},
-    {url:"/image/StepProjectHam/wordPress/wordpress5.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress5.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/wordPress/wordpress6.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress6.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/wordPress/wordpress7.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress7.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design8.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design8.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design9.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design9.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design10.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design10.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/wordPress/wordpress8.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress8.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/wordPress/wordpress9.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress9.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design11.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design11.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
-    {url:"/image/StepProjectHam/wordPress/wordpress10.jpg",
+    {url:"./image/StepProjectHam/wordPress/wordpress10.jpg",
     cattegory:"wordpress",
     "showphoto":"wordpress",
     name:"Wordpress"},
-    {url:"/image/StepProjectHam/graphicDesign/graphic-design12.jpg",
+    {url:"./image/StepProjectHam/graphicDesign/graphic-design12.jpg",
     cattegory:"graphic-design",
     "showphoto":"graphic-design",
     name:"GraphicDesig"},
@@ -272,7 +235,6 @@ function showPhoto(event) {
         }
     }
     )
-///новая функция 
 const addElement =document.querySelectorAll("[show-photo]");
 addElement.forEach((elem, index)=>{
     if(ourWorkClick === elem.getAttribute("show-photo")){
@@ -293,33 +255,25 @@ namesOurWorkButtons.forEach(btn =>{
     btn.addEventListener("click",showPhoto);
     })
 //// slider
-const slider = document.querySelector(".links-employees"); ///главный блок
-const icons = Array.from(slider.children);////масив иконок
-const btnLeft = document.querySelector(".left-arrow");////левая кнопка 
-const btnRight = document.querySelector(".right-arrow");/////правая кнопка
-let blocks = Array.from(document.querySelectorAll("[data-index]"))
-////перебор иконок
+const slider = document.querySelector(".links-employees"); 
+const icons = Array.from(slider.children);
+const btnLeft = document.querySelector(".left-arrow");
+const btnRight = document.querySelector(".right-arrow");
+let blocks = Array.from(document.querySelectorAll("[data-index]"));
 icons.forEach(function(icon, index){
-    ///присваиваем индекс иконке
     icon.dataset.index = index;
-    icons[0].setAttribute('data-active', '')
-    /////слушаем нажатие на каждую иконку 
+    icons[0].setAttribute('data-active', '');
     icon.addEventListener("click", function(){
-        showNextIcon("left")
+        showNextIcon("left");
     })
 });
-/////кнопка вперёд 
 btnLeft.onclick =function(){showNextIcon("left");}
-///кнопка назад
 btnRight.onclick =function(){showNextIcon("right");}
-////функция присвоения класса 
 function showNextIcon(direction) {
-////где мы сейчас 
-  const iconNow =slider.querySelector("[data-active]");
+const iconNow =slider.querySelector("[data-active]");
 const iconNowIndex =+iconNow.dataset.index;
 iconNow.classList.remove("block");
 iconNow.removeAttribute('data-active');
-/////следующий шаг
 let iconNextIndex;
 if(direction === "left"){
         iconNextIndex = iconNowIndex + 1 === icons.length ? 0:iconNowIndex + 1;
@@ -330,9 +284,7 @@ else if(direction === "right"){
 let nextIcon = slider.querySelector(`[data-index ="${iconNextIndex}"]`);
 nextIcon.classList.add("block");
 nextIcon.setAttribute("data-active"," ");
-//перебор photos
 blocks.forEach(element =>{
-    ///присваиваем индекс иконке
 element.getAttribute("data-index")
 if( nextIcon.getAttribute("data-index") === element.getAttribute("data-index") ){
 element.classList.add("block-wokers")}
