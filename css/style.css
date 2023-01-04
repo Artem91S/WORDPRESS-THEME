@@ -48,7 +48,7 @@ input:checked+.slider::before{
 }
 
 header{
-    background: url("/image/header-background.png")no-repeat center/cover;
+    background: url("../image/header-background.png")no-repeat center/cover;
     background-attachment: fixed;
     height:1012px;
 }
@@ -289,7 +289,7 @@ left:80px;
 }
 .action{
     height: 476px;
-    background: url("/image/blockAction.png")no-repeat center/cover;
+    background: url("../image/blockAction.png")no-repeat center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,7 +461,7 @@ left:80px;
     text-transform: uppercase;
 }
 .load-more span::before{
-    content:url("/image/icon/Plus.png");
+    content:url("../image/icon/Plus.png");
     padding: 20px 15px;
 }
 .breaking-news{
@@ -521,7 +521,7 @@ color:#18CFAB
     padding:6px 16px;
 }
 .say-about-us{
-    background: url('/image/About-us.png')no-repeat center/cover;
+    background: url('../image/About-us.png')no-repeat center/cover;
     height: 853px;
     text-align: center;
 }
