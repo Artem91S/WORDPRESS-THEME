@@ -1,9 +1,0 @@
-.our-services{
-    background-color:white;
-}
-.btn[data-theme = "dark"]{
-    display: none;
-}
-.btn[data-theme = "light"]{
-    display: block;
-}
