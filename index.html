@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet"  title="theme" href="#"/>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet"  title="theme" href="./css/style-light.css"/>
     <title>step project</title>
   </head>
   <body>
@@ -20,13 +20,15 @@
         <nav class="nav-header">
           <div class="main-logo">
             <img src="./image/theHam.svg" alt="theHam" />
-            <p class="element-log">H</p>
-            <p class="name-logo">the<span>Ham</span></p>
+            <a href="#" class="element-log">H</a>
+            <a href="#" class="name-logo">the<span>Ham</span></a>
           </div>
-          <label class ="switch">
-            <span class="name-slider">Theme</span>
+            <div class="switch-wrapp">
+              <p class="name-theme">Theme</p>
+              <label class ="switch">
               <input type="checkbox" id="input" data-input="1">
               <span class="slider"></span>
+            </div>
           </label>
           <div class="nav-bar">
             <ul>
@@ -112,9 +114,7 @@
         </div>
         <section class="our-services">
           <h3>Our Services</h3>
-          <div class="green-line-top"></div>
-          <div class="green-line-bottom"></div>
-          <nav class="services">
+          <div class="services">
             <ul class="click">
               <li data-name="web" class="clikc-button-color">
                 Web Design
@@ -135,7 +135,7 @@
                 Seo Service
               </li>
             </ul>
-          </nav>
+          </div>
           <div class="information">
             <div class="service-description click-on-button" show-info="web">
               <img src="./image/Our services/WebDesign.png" alt="Web Design" />
@@ -194,8 +194,6 @@
         </section>
         <section class="our-work">
           <h3>Our Amazing Work</h3>
-          <div class="green-line-top"></div>
-          <div class="green-line-bottom"></div>
           <nav class="navbar-of-works">
             <ul class="our-work-buttons">
               <li data-item ="all" class="btn-photo-color">All</li>
@@ -211,10 +209,8 @@
     <span href="#">Load More</span>
   </div>
         </section>
-        <section class="breaking-news">
+        <article class="breaking-news">
           <h3>Breaking News</h3>
-          <div class="green-line-top"></div>
-          <div class="green-line-bottom"></div>
           <div class="posts">
             <div class="amazing-blog">
               <a href="#"><img
@@ -325,11 +321,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </article>
         <section class="say-about-us">
           <h3>What People Say About theHam</h3>
-          <div class="green-line-top"></div>
-          <div class="green-line-bottom"></div>
           <img class="coma" src="./image/Coma-about-us.png" alt="Coma" />
           <p>
             Integer dignissim, augue tempus ultricies luctus, quam dui laoreet
@@ -393,8 +387,6 @@
         </section>
         <section class="best-image">
           <h3>Gallery of best images</h3>
-          <div class="green-line-top"></div>
-          <div class="green-line-bottom"></div>
           <div class="galary-images">
             <div class="terace">
                 <img src="./image/Galary of images/terrace.png" alt="Terrace">
@@ -435,9 +427,7 @@
                 <img src="./image/Galary of images/terrace.png" alt="Terrace">
             </div>
           </div>
-          <div class="load-more">
-            <span>Load More</span>
-          </div>
+         
 
         </section>
       </main>
