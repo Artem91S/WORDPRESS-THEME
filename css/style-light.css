@@ -250,7 +250,7 @@ header{
     display: block;
     width: 75px;
     top:65px;
-    height: 1px;
+    height: 0.5px;
     margin: 1px auto;
     background: #18CFAB;
     position: relative;
