@@ -16,29 +16,29 @@
   </head>
   <body>
     <div class="wraper">
-      <header>
-        <nav class="nav-header">
-          <div class="main-logo">
+      <header class="header">
+        <nav class="navbar">
+          <div class="navbar__main-logo">
             <img src="./image/theHam.svg" alt="theHam" />
-            <a href="#" class="element-log">H</a>
-            <a href="#" class="name-logo">the<span>Ham</span></a>
+            <a href="#" class="navbar__main-logo__element">H</a>
+            <a href="#" class="navbar__main-logo__text-content">the<span>Ham</span></a>
           </div>
-            <div class="switch-wrapp">
+          <div class="switch-wrapp">
               <p class="name-theme">Theme</p>
               <label class ="switch">
               <input type="checkbox" id="input" data-input="1">
               <span class="slider"></span>
             </div>
           </label>
-          <div class="nav-bar">
-            <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Testimonial</a></li>
+          <div class="navbar__points">
+            <ul class="navbar__list">
+              <li><a class="navbar__list__link" href="#">home</a></li>
+              <li><a class="navbar__list__link" href="#">About</a></li>
+              <li><a class="navbar__list__link" href="#">Blog</a></li>
+              <li><a class="navbar__list__link" href="#">Skills</a></li>
+              <li><a class="navbar__list__link" href="#">Service</a></li>
+              <li><a class="navbar__list__link" href="#">Work</a></li>
+              <li><a class="navbar__list__link"  href="#">Testimonial</a></li>
               <li>
                 <svg
                   width="22"
@@ -76,70 +76,83 @@
                 </svg>
               </li>
             </ul>
+            <div class="navbar__points__menu-burger">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn__lable" for="menu__toggle">
+                          <span></span>
+                    </label>
+            <ul class="burger__menu">
+              <li><a class="burger__menu__link" href="#">Home</a></li>
+              <li><a class="burger__menu__link" href="#">About</a></li>
+              <li><a class="burger__menu__link" href="#">Blog</a></li>
+              <li><a class="burger__menu__link" href="#">Skills</a></li>
+              <li><a class="burger__menu__link" href="#">Service</a></li>
+              <li><a class="burger__menu__link" href="#">Work</a></li>
+              <li><a class="burger__menu__link"  href="#">Testimonial</a></li>
+            </ul>
           </div>
         </nav>
-        <div class="header-description">
-          <p>The Ham is <span>Wordpress theme</span></p>
-          <h1>we are creative</h1>
-          <p>Just Buy And Enjoy These Awesome Features</p>
-          <div class="header-buttons">
-            <div class="explore-button">
-              <a href="#">EXPLORE NOW</a>
+        <div class="header__description">
+          <p class="header__description__text">The Ham is <span class="header__description__text-color" >Wordpress theme</span></p>
+          <h1 class="header__description__title" >we are creative</h1>
+          <p class="header__description__slogan">Just Buy And Enjoy These Awesome Features</p>
+          <div class="header__description__btn">
+            <div class="btn-action">
+              <a class="btn-action__link green" href="#">EXPLORE NOW</a>
             </div>
-
-            <div class="purchase-button">
-              <a href="#">PURCHASE NOW</a>
+            <div class="btn-action">
+              <a  class="btn-action__link blue" href="#">PURCHASE NOW</a>
             </div>
           </div>
         </div>
       </header>
-      <main>
-        <div class="main-navbar">
-          <div>
-            <img src="./image/icon/Theme .png"alt="Different theme option" />
-            <p>Different theme option</p>
+  <main>
+    <div class="main__topic-blocks">
+          <div class="main__topic-blocks__wrapper">
+            <img class="main__topic-blocks__wrappe__img"  src="./image/icon/Theme .png"alt="Different theme option" />
+            <p class="main__topic-blocks__wrapper__description">Different theme option</p>
           </div>
-          <div>
-            <img src="./image/icon/customizable.png" alt="fully customizable" />
-            <p>fully customizable</p>
+          <div class="main__topic-blocks__wrapper">
+            <img class="main__topic-blocks__img" src="./image/icon/customizable.png" alt="fully customizable" />
+            <p class="main__topic-blocks__wrapper__description">fully customizable</p>
           </div>
-          <div>
-            <img src="./image/icon/unlimited.png" alt="unlimited support" />
-            <p>unlimited support</p>
+          <div class="main__topic-blocks__wrapper">
+            <img class="main__topic-blocks__img" src="./image/icon/unlimited.png" alt="unlimited support" />
+            <p class="main__topic-blocks__wrapper__description">unlimited support</p>
           </div>
-          <div>
-            <img src="./image/icon/alldivece.png" alt="responsive all device" />
-            <p>responsive all device</p>
+          <div class="main__topic-blocks__wrapper">
+            <img class="tmain__opic-blocks__img"  src="./image/icon/alldivece.png" alt="responsive all device" />
+            <p class="main__topic-blocks__wrapper__description">responsive all device</p>
           </div>
-        </div>
-        <section class="our-services">
-          <h3>Our Services</h3>
-          <div class="services">
-            <ul class="click">
-              <li data-name="web" class="clikc-button-color">
+    </div>
+    <section class="main__our-services">
+          <h3 class="title-style">Our Services</h3>
+          <div class="main__our-services__container">
+            <ul class="main__our-services__list">
+              <li class="main__our-services__list__link click-on-btn--color" data-name="web">
                 Web Design
               </li>
-              <li data-name="graphic">
+              <li class="main__our-services__list__link" data-name="graphic">
                 Graphic Design
               </li>
-              <li data-name="support">
+              <li class="main__our-services__list__link" data-name="support">
                 Online Support
               </li>
-              <li data-name="app-design">
+              <li class="main__our-services__list__link" data-name="app-design">
                 App Design
               </li>
-              <li data-name="marketing">
+              <li class="main__our-services__list__link" data-name="marketing">
                 Online Marketing
               </li>
-              <li data-name="service">
+              <li class="main__our-services__list__link" data-name="service">
                 Seo Service
               </li>
             </ul>
           </div>
-          <div class="information">
-            <div class="service-description click-on-button" show-info="web">
-              <img src="./image/Our services/WebDesign.png" alt="Web Design" />
-              <p>
+          <div class="main__our-services__information">
+            <div class="main__our-services__information__description click-on-btn" show-info="web">
+              <img class="main__our-services__information__description__img"/ src="./image/Our services/WebDesign.png" alt="Web Design" />
+              <p class="main__our-services__information__description__text" >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -150,289 +163,302 @@
               deserunt mollit anim id est laborum. 
             </p>
             </div>
-            <div class="service-description" show-info ="graphic">
-            <img src="./image/Our services/graphic-design.jpg" alt="Graphic Design" />
-            <p>
+            <div class="main__our-services__information__description" show-info ="graphic">
+            <img class="main__our-services__information__description__img" src="./image/Our services/graphic-design.jpg" alt="Graphic Design" />
+            <p class="main__our-services__information__description__text" >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis explicabo quis dignissimos. Libero asperiores voluptatem esse ipsam illum quas commodi est, excepturi ducimus. Est eaque nemo dignissimos sed nesciunt deleniti molestias, quidem excepturi officia illum quos commodi iusto obcaecati voluptate corporis. Velit quibusdam illum aperiam, architecto hic molestiae, impedit aspernatur perferendis iusto unde est, vel cum. Aut asperiores vel unde laudantium! Incidunt vitae animi quisquam suscipit cum doloribus! Vel explicabo provident atque ipsam veniam, dignissimos voluptatibus facere perferendis quo sint repellat consequatur voluptates, natus, non accusantium a praesentium nam ipsa quisquam alias nulla dicta! Nihil accusantium architecto possimus voluptate adipisci.
             </p>
             </div>
-          <div class="service-description" show-info ="support">
-            <img src="./image/Our services/support.png" alt="Support" />
-            <p>
+          <div class="main__our-services__information__description" show-info ="support">
+            <img class="main__our-services__information__description__img" src="./image/Our services/support.png" alt="Support" />
+            <p class="main__our-services__information__description__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae quod sequi voluptatibus quam voluptatum sunt itaque praesentium, inventore ipsa a omnis saepe nisi tenetur sit. Consequatur culpa incidunt dolorem modi nobis tempore adipisci dolorum eum ipsa aperiam perferendis nam nisi et vel saepe, asperiores consectetur sunt quos architecto voluptatibus sint fuga blanditiis, pariatur odio! Tempore aperiam accusamus, facere, corporis sapiente aliquid repudiandae non labore iure est, possimus omnis? Voluptate quas sint enim. Qui pariatur dolore aspernatur eum earum delectus illo ab veniam. Non doloribus ipsam sapiente ratione numquam, officia dolor magnam in saepe dolorem doloremque voluptatibus sint distinctio, iure fugit nam incidunt suscipit alias quisquam eaque. Omnis, nesciunt. 
             </p>
           </div>
-          <div class="service-description" show-info ="app-design">
-            <img src="./image/Our services/app-design.jpg" alt="App Design" />
-            <p>
+          <div class="main__our-services__information__description" show-info ="app-design">
+            <img class="main__our-services__information__description__img" src="./image/Our services/app-design.jpg" alt="App Design" />
+            <p class="main__our-services__information__description__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo vel, tempora dignissimos sequi dolores voluptatibus in ex dicta ab assumenda autem harum voluptate aut reprehenderit vitae, sint maiores suscipit, reiciendis quae tempore! Aspernatur vel amet pariatur corrupti quos a, sapiente neque, ea, earum aut quo? Voluptatem maiores est veritatis aut in ut aliquid amet eum quos repellendus? Unde, laboriosam. Deleniti voluptates officia sed atque repudiandae totam eaque quae praesentium aliquam inventore saepe, obcaecati distinctio cum et, aliquid sequi incidunt molestias tempora natus non ullam! Eius illum maiores, facere nesciunt voluptatum illo sapiente laudantium provident optio accusamus sint aperiam tempore distinctio!
             </p>
           </div>
-          <div class="service-description" show-info ="marketing">
-            <img src="./image/Our services/marketing.jpg" alt="Marketing" />
-            <p>
+          <div class="main__our-services__information__description" show-info ="marketing">
+            <img class="main__our-services__information__description__img" src="./image/Our services/marketing.jpg" alt="Marketing" />
+            <p class="main__our-services__information__description__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum delectus est soluta cumque ratione qui repellat! Perferendis accusamus deleniti unde, impedit autem sint totam tenetur beatae temporibus optio amet vitae quia rerum laborum facilis ullam deserunt nemo, ipsum numquam! Perferendis natus quod totam assumenda aliquam. Quasi libero, delectus facere reprehenderit hic harum illo, nobis, officia corrupti aliquam neque ea obcaecati error rem tenetur debitis quas. Asperiores autem, fugit corporis esse, eveniet exercitationem maxime dicta veniam non placeat ratione perferendis aut pariatur excepturi quisquam accusamus!
             </p>
           </div>
-          <div class="service-description" show-info ="service">
-            <img src="./image/Our services/service.jpg" alt="Service" />
-            <p>
+          <div class="main__our-services__information__description" show-info ="service">
+            <img class="main__our-services__information__description__img" src="./image/Our services/service.jpg" alt="Service" />
+            <p class="main__our-services__information__description__text">
                Possimus ipsa aperiam quam iste, illum aliquam alias maxime sapiente officia, dignissimos facere accusantium culpa nesciunt consequatur at autem! Laborum est distinctio adipisci qui dolore quibusdam molestiae dolor perferendis, sit laudantium voluptatibus doloremque voluptas voluptate earum fuga saepe alias expedita voluptatem officia sint quae rem commodi corrupti! Eaque, quo, ullam molestias quae architecto, magni dolorem id a sed iure ipsum maxime provident! Minima perspiciatis harum recusandae porro officiis deleniti expedita accusantium rerum saepe, praesentium odio exercitationem dolorum nihil incidunt id error suscipit doloribus consequatur quos corrupti provident dicta nulla! Unde dolore ullam dolores ratione repellendus corrupti perferendis, autem at, praesentium, molestiae sed harum placeat magni officiis eaque vitae impedit aspernatur voluptates nam! 
             </p>
           </div>
         </div>
-        </section>
-        <section class="action">
-          <h3>Everything is ready. just buy and install now</h3>
-          <p>
+    </section>
+    <section class="main__just-buy">
+          <h3 class="main__just-buy__title">Everything is ready. just buy and install now</h3>
+          <p class="main__just-buy__descriptions">
             Smooth reliable, responsive ready, perfect portfolio, unique blog
             layout and many many options for you
           </p>
-          <div class="purchase-button">
-            <a href="#">PURCHASE NOW</a>
+          <div class="btn-action">
+            <a class="btn-action__link green" href="#">PURCHASE NOW</a>
           </div>
-        </section>
-        <section class="our-work">
-          <h3>Our Amazing Work</h3>
-          <nav class="navbar-of-works">
-            <ul class="our-work-buttons">
-              <li data-item ="all" class="btn-photo-color">All</li>
-              <li data-item ="graphic-design">Graphic Design</li>
-              <li data-item ="web-design">Web Design</li>
-              <li data-item ="landing-page">Landing Pages</li>
-              <li data-item ="wordpress">Wordpress</li>
+    </section>
+    <section class="main__our-work">
+          <h3 class="title-style">Our Amazing Work</h3>
+          <div class="main__our-work__btn">
+            <ul class="main__our-work__btn__list">
+              <li class="main__our-work__btn__list__link btn-photo-color" data-item ="all">All</li>
+              <li class="main__our-work__btn__list__link" data-item ="graphic-design">Graphic Design</li>
+              <li class="main__our-work__btn__list__link" data-item ="web-design">Web Design</li>
+              <li class="main__our-work__btn__list__link" data-item ="landing-page">Landing Pages</li>
+              <li class="main__our-work__btn__list__link" data-item ="wordpress">Wordpress</li>
             </ul>
-          </nav>
-<div class="photo-of-works" >
-</div>
-  <div class="load-more load-img" all-photo="all" >
-    <span href="#">Load More</span>
+          </div>
+    <ul class="main__our-work__posters-block" >
+    </ul>
+  <div class="load-more__btn load-img" all-photo="all" >
+    <a class="load-more__btn__link" href="#">Load More</a>
   </div>
-        </section>
-        <article class="breaking-news">
-          <h3>Breaking News</h3>
-          <div class="posts">
-            <div class="amazing-blog">
-              <a href="#"><img
+    </section>
+    <article class="main__breaking-news">
+          <h3 class="title-style">Breaking News</h3>
+          <div class="main__breaking-news__container">
+            <div class="main__breaking-news__container__post">
+              <a  href="#"><img
+                class="main__breaking-news__container__post__img"
                 src="./image/Breaking news/man-with-camera.png"
                 alt="Man with camera"
               /></a>
-              <div class="date-of-post">
-                <p>12<br />Feb</p>
+              <div class="main__breaking-news__container__post__description">
+                <p class="main__breaking-news__container__post__description__data">12<br />Feb</p>
               </div>
-              <h4>Amazing Blog Post</h4>
-              <div class="comments">
+              <h4 class="main__breaking-news__container__post__description__title">Amazing Blog Post</h4>
+              <div class="main__breaking-news__container__post__description__comments">
                 <span>By admin</span>
                 <span>|</span>
                 <span> 2 comment</span>
               </div>
             </div>
-            <div class="amazing-blog">
-              <a href="#"><img src="./image/Breaking news/fire.png" alt="Fire" /></a>
-              <div class="date-of-post">
-                <p>12<br />Feb</p>
-              </div>
-              <h4>Amazing Blog Post</h4>
-              <div class="comments">
-                <span>By admin</span>
-                <span>|</span>
-                <span> 2 comment</span>
-              </div>
-            </div>
-            <div class="amazing-blog">
+            <div class="main__breaking-news__container__post">
               <a href="#"><img
+                class="main__breaking-news__container__post__img"
+                src="./image/Breaking news/fire.png" alt="Fire" /></a>
+              <div class="main__breaking-news__container__post__description">
+                <p class="main__breaking-news__container__post__description__data">12<br />Feb</p>
+              </div>
+              <h4 class="main__breaking-news__container__post__description__title">Amazing Blog Post</h4>
+              <div class="main__breaking-news__container__post__description__comments">
+                <span>By admin</span>
+                <span>|</span>
+                <span> 2 comment</span>
+              </div>
+            </div>
+            <div class="main__breaking-news__container__post">
+              <a  href="#"><img
+                class="main__breaking-news__container__post__img"
                 src="./image/Breaking news/man-with-bicycle.png"
                 alt="Man with bicycle"
               /></a>
-              <div class="date-of-post">
-                <p>12<br />Feb</p>
+              <div class="main__breaking-news__container__post__description">
+                <p class="main__breaking-news__container__post__description__data">12<br />Feb</p>
               </div>
-              <h4>Amazing Blog Post</h4>
-              <div class="comments">
+              <h4 class="main__breaking-news__container__post__description__title">Amazing Blog Post</h4>
+              <div class="main__breaking-news__container__post__description__comments">
                 <span>By admin</span>
                 <span>|</span>
                 <span> 2 comment</span>
               </div>
             </div>
-            <div class="amazing-blog">
-              <a href="#"><img src="./image/Breaking news/paint.png" alt="Paint" /></a>
-              <div class="date-of-post">
-                <p>12<br />Feb</p>
+            <div class="main__breaking-news__container__post">
+              <a href="#"><img 
+                class="main__breaking-news__container__post__img"
+                src="./image/Breaking news/paint.png" alt="Paint" /></a>
+              <div class="main__breaking-news__container__post__description">
+                <p class="main__breaking-news__container__post__description__data">12<br />Feb</p>
               </div>
-              <h4>Amazing Blog Post</h4>
-              <div class="comments">
+              <h4 class="main__breaking-news__container__post__description__title">Amazing Blog Post</h4>
+              <div class="main__breaking-news__container__post__description__comments">
                 <span>By admin</span>
                 <span>|</span>
                 <span> 2 comment</span>
               </div>
             </div>
-            <div class="amazing-blog">
-              <a href="#"><img src="./image/Breaking news/bird.png" alt="Bird" /></a>
-              <div class="date-of-post">
-                <p>12<br />Feb</p>
+            <div class="main__breaking-news__container__post">
+              <a href="#"><img 
+                class="main__breaking-news__container__post__img"
+                src="./image/Breaking news/bird.png" alt="Bird" /></a>
+              <div class="main__breaking-news__container__post__description">
+                <p class="main__breaking-news__container__post__description__data">12<br />Feb</p>
               </div>
-              <h4>Amazing Blog Post</h4>
-              <div class="comments">
+              <h4 class="main__breaking-news__container__post__description__title">Amazing Blog Post</h4>
+              <div class="main__breaking-news__container__post__description__comments">
                 <span>By admin</span>
                 <span>|</span>
                 <span> 2 comment</span>
               </div>
             </div>
-            <div class="amazing-blog">
+            <div class="main__breaking-news__container__post">
               <a href="#"><img
+                class="main__breaking-news__container__post__img"
                 src="./image/Breaking news/extreme-bike.png"
                 alt="Extreme bike"
               /></a>
-              <div class="date-of-post">
-                <p>12<br />Feb</p>
+              <div class="main__breaking-news__container__post__description">
+                <p class="main__breaking-news__container__post__description__data">12<br />Feb</p>
               </div>
-              <h4>Amazing Blog Post</h4>
-              <div class="comments">
+              <h4 class="main__breaking-news__container__post__description__title">Amazing Blog Post</h4>
+              <div class="main__breaking-news__container__post__description__comments">
                 <span>By admin</span>
                 <span>|</span>
                 <span> 2 comment</span>
               </div>
             </div>
-            <div class="amazing-blog">
+            <div class="main__breaking-news__container__post">
               <a href="#"><img
+                class="main__breaking-news__container__post__img"
                 src="./image/Breaking news/people-and-waterfall.png"
                 alt="People and waterfall"
               /></a>
-              <div class="date-of-post">
-                <p>12<br />Feb</p>
+              <div class="main__breaking-news__container__post__description">
+                <p class="main__breaking-news__container__post__description__data">12<br/>Feb</p>
               </div>
-              <h4>Amazing Blog Post</h4>
-              <div class="comments">
+              <h4 class="main__breaking-news__container__post__description__title">Amazing Blog Post</h4>
+              <div class="main__breaking-news__container__post__description__comments">
                 <span>By admin</span>
                 <span>|</span>
                 <span> 2 comment</span>
               </div>
             </div>
-            <div class="amazing-blog">
-              <a href="#"><img src="./image/Breaking news/business.png" alt="Business" /></a>
-              <div class="date-of-post">
-                <p>12<br />Feb</p>
+            <div class="main__breaking-news__container__post">
+              <a href="#"><img 
+                class="main__breaking-news__container__post__img"
+                src="./image/Breaking news/business.png" alt="Business" /></a>
+              <div class="main__breaking-news__container__post__description">
+                <p class="main__breaking-news__container__post__description__data">12<br/>Feb</p>
               </div>
-              <h4>Amazing Blog Post</h4>
-              <div class="comments">
+              <h4 class="main__breaking-news__container__post__description__title">Amazing Blog Post</h4>
+              <div class="main__breaking-news__container__post__description__comments">
                 <span>By admin</span>
                 <span>|</span>
                 <span> 2 comment</span>
               </div>
             </div>
           </div>
-        </article>
-        <section class="say-about-us">
-          <h3>What People Say About theHam</h3>
-          <img class="coma" src="./image/Coma-about-us.png" alt="Coma" />
-          <p>
+    </article>
+    <section class="main__say-about-us">
+          <h3 class="main__say-about-us__title">What People Say About theHam</h3>
+          <img class="main__say-about-us__img" src="./image/Coma-about-us.png" alt="Coma" />
+          <p class="main__say-about-us__description">
             Integer dignissim, augue tempus ultricies luctus, quam dui laoreet
             sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget
             aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem,
             non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam
             facilisis.
           </p>
-          <div class="info-wokers">
-          <div class="workers heron block-wokers" data-index="0">
-            <h5>Heron Kalli</h5>
-            <span>PR manager</span>
-            <div class="foto-employees">
-              <img src="./image/employees/HeronKalli-big.png" alt="Heron Kalli" />
+        <div class="main__say-about-us__info-workers">
+          <div class="workers heron block-workers" data-index="0">
+            <h5 class="main__say-about-us__info-workers__title" >Heron Kalli</h5>
+            <span class="main__say-about-us__info-workers__description" >PR manager</span>
+            <div >
+              <img class="main__say-about-us__info-workers__photo-icons" src="./image/employees/HeronKalli-big.png" alt="Heron Kalli" />
             </div>
           </div>
 
           <div class="workers ben" data-index="1">
-            <h5>Ben Stall</h5>
-            <span>Project manager</span>
-            <div class="foto-employees">
-              <img src="./image/employees/BenStall-big.png" alt="Ben Stall" />
+            <h5 class="main__say-about-us__info-workers__title" >Ben Stall</h5>
+            <span class="main__say-about-us__info-workers__description" >Project manager</span>
+            <div >
+              <img class="main__say-about-us__info-workers__photo-icons" src="./image/employees/BenStall-big.png" alt="Ben Stall" />
             </div>
           </div>
 
-          <div class="workers hasan "  data-index="2">
-            <h5>Hasan Al</h5>
-            <span>UX Designer</span>
-            <div class="foto-employees">
-              <img src="./image/employees/Hasan-Ali.png" alt="Hasan Ali" />
+          <div class="workers hasan"  data-index="2">
+            <h5 class="main__say-about-us__info-workers__title" >Hasan Al</h5>
+            <span class="main__say-about-us__info-workers__description" >UX Designer</span>
+            <div >
+              <img class="main__say-about-us__info-workers__photo-icons" src="./image/employees/Hasan-Ali.png" alt="Hasan Ali" />
             </div>
           </div>
 
           <div class="workers rebeca"  data-index="3">
-            <h5>Rebeca Derth</h5>
-            <span>Office manager</span>
-            <div class="foto-employees">
-              <img src="./image/employees/RebecaDerth-big.png" alt="Rebeca Derth" />
+            <h5 class="main__say-about-us__info-workers__title" >Rebeca Derth</h5>
+            <span class="main__say-about-us__info-workers__description" >Office manager</span>
+            <div >
+              <img class="main__say-about-us__info-workers__photo-icons" src="./image/employees/RebecaDerth-big.png" alt="Rebeca Derth" />
             </div>
           </div>
         </div>
-          <div class="slider-links">
-          <div class="left-arrow">&#8658</div>
-          <div class="links-employees">
-            <div class="link block">
-              <img src="./image/employees/HeronKalli.png" alt="Heron Kalli" />
+          <div class="main__say-about-us__slider-links">
+            <div class="main__say-about-us__slider-links__left-arrow">&#8658</div>
+            <div class="main__say-about-us__slider-links__links-employees">
+              <div class="main__say-about-us__slider-links__links-employees__link block">
+                <img  class="main__say-about-us__slider-links__links-employees__link__icon"src="./image/employees/HeronKalli.png" alt="Heron Kalli" />
+             </div>
+              <div class="main__say-about-us__slider-links__links-employees__link">
+                <img class="main__say-about-us__slider-links__links-employees__link__icon" src="./image/employees/BenStall.png" alt="Ben Stall" />
+              </div>
+              <div class="main__say-about-us__slider-links__links-employees__link">
+                <img  class="main__say-about-us__slider-links__links-employees__link__icon"src="./image/employees/Hasan.png" alt="Hasan Ali" />
+              </div>
+              <div class="main__say-about-us__slider-links__links-employees__link">
+                <img class="main__say-about-us__slider-links__links-employees__link__icon" src="./image/employees/RebecaDerth.png" alt="Rebeca Derth" />
+              </div>
             </div>
-            <div class="link">
-              <img src="./image/employees/BenStall.png" alt="Ben Stall" />
-            </div>
-            <div class="link ">
-              <img src="./image/employees/Hasan.png" alt="Hasan Ali" />
-            </div>
-            <div class="link ">
-              <img src="./image/employees/RebecaDerth.png" alt="Rebeca Derth" />
-            </div>
-          </div>
-          <div class="right-arrow">&#8656</div>
+          <div class="main__say-about-us__slider-links__right-arrow">&#8656</div>
         </div>
   
-        </section>
-        <section class="best-image">
-          <h3>Gallery of best images</h3>
-          <div class="galary-images">
-            <div class="terace">
-                <img src="./image/Galary of images/terrace.png" alt="Terrace">
+    </section>
+    <section class="main__best-image">
+          <h3 class="title-style">Gallery of best images</h3>
+          <div class="main__best-image_gallery-images">
+            <div class="main__best-image_gallery-images__terrace">
+                <img class="main__best-image__element" src="./image/Galary of images/terrace.png" alt="Terrace">
             </div>
-            <div class="dubai">
-                <img src="./image/Galary of images/Dubai.png" alt="Dubai">
+            <div class="main__best-image_gallery-images__dubai">
+                <img  class="main__best-image__element" src="./image/Galary of images/Dubai.png" alt="Dubai">
             </div>
-            <div class="kalash">
-                <div class="top-kalash">
-                    <img src="./image/Galary of images/small-house.png" alt="House">
-                    <img src="./image/Galary of images/Kids-room.png" alt="Kids room">
+            <div class="main__best-image_gallery-images__kalash">
+                <div class="main__best-image_gallery-images__top-kalash">
+                    <img class="main__best-image__element-duo" src="./image/Galary of images/small-house.png" alt="House">
+                    <img class="main__best-image__element-duo"src="./image/Galary of images/Kids-room.png" alt="Kids room">
                 </div>
-                <div class="bottom-kalash">
-                    <img src="./image/Galary of images/Pools-small.png" alt="Pools">
-                    <img src="./image/Galary of images/Kids-Store-small.png" alt="Kids Store">
-                    <img src="./image/Galary of images/small-kitchen.png" alt="Kitchen">
-                    <img src="./image/Galary of images/Kids-small.png" alt="Kids">
-                    <img src="./image/Galary of images/small-room.png" alt="Room">
-                    <img src="./image/Galary of images/horses-small.png" alt="Horses">
-                    <img src="./image/Galary of images/small-terrace.png" alt="Terrace">
-                    <img src="./image/Galary of images/small-bilding.png" alt="Bilding">
-                    <img src="./image/Galary of images/staduims-small.png" alt="Staduims">
+                <div class="main__best-image_gallery-images__bottom-kalash">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/Pools-small.png" alt="Pools">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/Kids-Store-small.png" alt="Kids Store">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/small-kitchen.png" alt="Kitchen">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/Kids-small.png" alt="Kids">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/small-room.png" alt="Room">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/horses-small.png" alt="Horses">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/small-terrace.png" alt="Terrace">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/small-bilding.png" alt="Bilding">
+                    <img class="main__best-image_gallery-images__bottom-kalash__icon" src="./image/Galary of images/staduims-small.png" alt="Staduims">
                 </div>
             </div>
-            <div class="kitchen">
-                <img src="./image/Galary of images/Kitchen.png" alt="Kitchen">
+            <div class="main__best-image_gallery-images__kitchen">
+                <img class="main__best-image__element"src="./image/Galary of images/Kitchen.png" alt="Kitchen">
             </div>
-            <div class="room">
-                <img src="./image/Galary of images/Room.png" alt="Room">
+            <div class="main__best-image_gallery-images__room">
+                <img class="main__best-image__element"src="./image/Galary of images/Room.png" alt="Room">
             </div>
-            <div class="bridge">
-                <img src="./image/Galary of images/Bridge.png" alt="Bridge">
+            <div class="main__best-image_gallery-images__bridge ">
+                <img class="main__best-image__element grid1000"src="./image/Galary of images/Bridge.png" alt="Bridge">
             </div>
-            <div class="house">
-                <img src="./image/Galary of images/House.png" alt="House">
+            <div class="main__best-image_gallery-images__house">
+                <img class="main__best-image__element"src="./image/Galary of images/House.png" alt="House">
             </div>
-            <div class="terrace">
-                <img src="./image/Galary of images/terrace.png" alt="Terrace">
+            <div class="main__best-image_gallery-images__terraces">
+                <img class="main__best-image__element"src="./image/Galary of images/terrace.png" alt="Terrace">
             </div>
           </div>
          
 
-        </section>
-      </main>
-      <footer>
-        <p>© Copyright 2015 &#160<span>theHam</span>&#160| All Rights Reserved</p>
+    </section>
+  </main>
+      <footer class="footer">
+        <p class="footer__decription">© Copyright 2015 &#160
+          <span class="footer__decription__decorate">theHam</span>&#160| All Rights Reserved</p>
       </footer>
     </div>
     <script src="./script/script.js" defer></script>
