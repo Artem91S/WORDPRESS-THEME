@@ -7,7 +7,7 @@ The first one is header with navbar in the top, banner with slogan and descripti
 ![WORDPRESS THEME   App](https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/2bbd597e-543e-4ee7-b46b-99ac6f8f6c97) 
 </br>
 The second is called "our services" where you can read about all of them with image and short description.
-<img width="1200" alt="Our services" src="https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/47cd90fd-1194-4694-a948-009ee08857e6">
+<img width="1200px" alt="Our services" src="https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/47cd90fd-1194-4694-a948-009ee08857e6">
 
 In my work, I solved the following tasks: 
 Adaptive design for Desktop, Laptop, Tablet, Mobile.
