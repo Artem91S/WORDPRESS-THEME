@@ -2,7 +2,13 @@
 WORDPRESS THEME                     
 Desktop theme download site.                                                      
 Landing page site about a company that generates themes for applications. 
-The site has 6 main sections.
+In my work, I solved the following tasks: 
+Adaptive design for Desktop, Laptop, Tablet, Mobile.
+Use of Flex and Grid technologies.Work with BEM. 
+Written in pure JS without libraries.
+An imitation of uploading a photo from the server was made.
+What used:                                                                                       
+HTML,CSS,JS,Flex,Grid,pseudo elements,responsive design.
 The section with navbar in the top and banner with slogan and description:
 </br>
 ![WORDPRESS THEME   App](https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/c62521c6-5dc5-456b-b8a2-c9da2690cb0f)
@@ -19,11 +25,5 @@ The section  "What People Say About" where you can see the all photos of our tea
 </br>
 <img width="960px" alt="What People Say About" src="https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/c65dc833-58aa-4e28-aa07-adeb8d38f0e7">
 </br>
-In my work, I solved the following tasks: 
-Adaptive design for Desktop, Laptop, Tablet, Mobile.
-Use of Flex and Grid technologies.Work with BEM. 
-Written in pure JS without libraries.
-An imitation of uploading a photo from the server was made.
-What used:                                                                                       
-HTML,CSS,JS,Flex,Grid,pseudo elements,responsive design.
+
 
