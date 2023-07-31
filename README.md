@@ -14,7 +14,7 @@ Try it.
 <img width="960px" alt="Amaizing Work" src="https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/a281f875-f76c-49d0-a6b7-344d2decf365"/>
 </br>
 The section  "What People Say About" where you can see the all photos of our team.
-<img width="650" alt="What People Say About" src="https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/c65dc833-58aa-4e28-aa07-adeb8d38f0e7">
+<img width="960px" alt="What People Say About" src="https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/c65dc833-58aa-4e28-aa07-adeb8d38f0e7">
 </br>
 In my work, I solved the following tasks: 
 Adaptive design for Desktop, Laptop, Tablet, Mobile.
