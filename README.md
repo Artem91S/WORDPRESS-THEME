@@ -1,1 +1,8 @@
-This site is written in HTML, CSS, JS. HTML CSS I used flex box,grid,position,parallax and others.JS I used delegation, replacing classes, changing CSS files, adding HTML elements, a slider in both directions and simulating adding photos from the server by clicking on the Load button.
+
+WORDPRESS THEME                     
+Desktop theme download site.                                                      
+Landing page site about a company that generates themes for applications. 
+
+In my work, I solved the following tasks: Adaptive design for Desktop, Laptop, Tablet, Mobile. Use of Flex and Grid technologies.Work with BEM. Written in pure JS without libraries.An imitation of uploading a photo from the server was made.
+What used:                                                                                       
+HTML,CSS,JS,Flex,Grid,pseudo elements,responsive design.
