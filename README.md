@@ -9,6 +9,7 @@ Written in pure JS without libraries.
 An imitation of uploading a photo from the server was made.
 What used:                                                                                       
 HTML,CSS,JS,Flex,Grid,pseudo elements,responsive design.
+</br>
 The section with navbar in the top and banner with slogan and description:
 </br>
 ![WORDPRESS THEME   App](https://github.com/Artem91S/WORDPRESS-THEME/assets/115031070/c62521c6-5dc5-456b-b8a2-c9da2690cb0f)
